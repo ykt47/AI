@@ -1213,7 +1213,7 @@ def render_performance():
         st.markdown("""
         <div class="info-box">
             <h4 style="color: #E6E6FA; margin: 0;">🔍 Logistic Regression Analysis</h4>
-            <p style="margin: 0.5rem 0; color: #20211A;">
+            <p style="margin: 0.5rem 0; color: #E6E6FA;">
                 Logistic Regression shows very similar performance to SVM, with slightly better handling of negative reviews (1.5% improvement in recall).
                 This model offers a good balance between accuracy and computational efficiency.
             </p>
@@ -1238,7 +1238,7 @@ def render_performance():
         st.markdown("""
         <div class="info-box">
             <h4 style="color: #E6E6FA; margin: 0;">🔍 Naive Bayes Analysis</h4>
-            <p style="margin: 0.5rem 0; color: #20211A;">
+            <p style="margin: 0.5rem 0; color: #E6E6FA;">
                 Naive Bayes shows higher confusion between all classes, especially between neutral and negative reviews.
                 However, it offers extremely fast prediction times, making it suitable for real-time applications where speed is critical.
             </p>
@@ -1302,7 +1302,7 @@ def render_models():
             
     # Enhanced SVM visualization
         st.markdown("""
-        <div style="text-align: center; margin-top:-7rem; padding: 15px; background: white; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 350px; margin-left: auto; margin-right: 0;">
+        <div style="text-align: center; margin-top:-7rem; min-height: 300px; padding: 15px; background: white; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 33%; margin-left: auto; margin-right: 0;">
             <h4 style="color: #2c3e50; margin-bottom: 10px; margin-top: 5px; font-weight: 600; font-size: 1.1rem;">SVM Decision Boundary</h4>
             <div style="position: relative; height: 160px; background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(255, 255, 255, 0.4), rgba(244, 67, 54, 0.2)); border-radius: 10px; border: 1px solid #ddd; margin: 0 auto; width: 100%; max-width: 300px;">
                 <!-- Decision boundary line -->
@@ -1959,7 +1959,6 @@ def render_about():
     
     # Future improvements
     st.markdown('<h3 style="color: #2c3e50;">🚀 Future Enhancements</h3>', unsafe_allow_html=True)
-    
     st.markdown("""
     <div class="card">
         <h4 style="color: #2c3e50;">Planned Features</h4>
